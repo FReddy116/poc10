@@ -25,19 +25,19 @@ jobs:
           script: |
             echo "Connected to EC2"
 
-            echo "Installing Nodejs"
+            # echo "Installing Nodejs"
 
-            sudo apt update
+            # sudo apt update
 
-            sudo apt install nodejs -y
+            # sudo apt install nodejs -y
 
-            echo "Installing npm"
+            # echo "Installing npm"
 
-            sudo apt install npm -y
+            # sudo apt install npm -y
 
-            echo "Installing pm2"
+            # echo "Installing pm2"
 
-            sudo npm i pm2 -g
+            # sudo npm i pm2 -g
 
             # Create a app dir, if exists mkdir does nothing like no error
             sudo mkdir -p /var/www/poc10-app
@@ -59,7 +59,7 @@ jobs:
                 echo "Git repo not found!"
                 echo "Cloning the repo"
 
-                git clone "https://github.com/FReddy116/poc10-server-code" .
+                git clone "https://github.com/FReddy116/poc10" .
             fi
 
             echo "Going into app directory"
